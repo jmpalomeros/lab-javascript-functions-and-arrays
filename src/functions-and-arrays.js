@@ -19,16 +19,19 @@ function findLongestWord(listOfWords) {
 if (listOfWords.length === 0){
   return null
   }
-let wordSizeCounter = 0
-for (let i = 0; i < listOfWords.length; i++) {
+
+for (let i = 0; i < listOfWords.length; i++){
   if (listOfWords.length === 1) {
     return listOfWords[i]
   }
-  wordSizeCounter += listOfWords[i].length
+}
+
+let wordsizeCunter= 0 
+
+wordSizeCounter += listOfWords[i].length
   
-  if(wordSize === wordSize){
-    return wordSize
-  }
+  if(wordSizeCounter[i] === wordSizeCounter[i]){
+    return wordSizecounter[i]
   }
 }
 
@@ -52,9 +55,6 @@ function sumNumbers(numArr) {
   return numCounter
 
 }
-//las sumas son iguales con indepedencia del array
-
-
 
 
 // Iteration #3.1 Bonus:
@@ -135,6 +135,18 @@ function doesWordExist(wordsElements) {
   if (wordsElements.length === 0){
     return null
     }
+  if(wordsElements.length === 1)
+  return true
+  let wECouneter= 0
+  for(let w=0; w<wordsElements.length;w++){
+    wECouneter+= wordsElements[w]
+    if(wECouneter === 0)
+      return false
+    else if (wECouneter ===1)
+      return true
+
+  }
+  
 }
 
 
@@ -154,7 +166,29 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(repeatWord) {
+
+  if (repeatWord.length === 0){
+    return 0
+    }
+  let zeroRepeat= 0
+  let oneRepeat = 0
+  let fiveRepeat = 0
+  for (k=0;k<repeatWord.length;k++){
+    if(repeatWord[k] === 0){
+      return 0
+    }
+    else if(repeatWord[k] ===1){
+      return 1
+    }
+
+  }
+  }
+  
+
+  
+
+
 
 
 
